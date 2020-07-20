@@ -1,5 +1,12 @@
 import ekwipunek.Miecz;
 import ekwipunek.Zbroja;
+import miejsca.ArenaWalki;
+import miejsca.Medyk;
+import postacie.*;
+import potwory.Goblin;
+import potwory.Golum;
+import potwory.Smok;
+import potwory.Trol;
 
 import java.util.Scanner;
 
@@ -13,7 +20,7 @@ public class ŚwiatGryInteraktywnej {
         System.out.println("***WITAJ W MOJEJ GRZE***");
         System.out.println("Out of The Forest");
         System.out.println("Rozpoczynamy od stworzenia nowego BOHATERA:)");
-//        Postac twojaPostac = new Wojownik("nic");
+        Postac twojaPostac = new Wojownik("nic");
         System.out.println("Podaj imie wojownika: ");
         String name = sc.nextLine();
         System.out.println("Którego bohatera bybierasz?: ");
@@ -23,19 +30,19 @@ public class ŚwiatGryInteraktywnej {
        switch(pom){
            case 1:
                System.out.println("Wybrałeś Maga");
-//               twojaPostac = new Mag(name);
+               twojaPostac = new Mag(name);
                break;
            case 2:
                System.out.println("Wybrałeś Nekromante");
-//               twojaPostac = new Nekromanta(name);
+               twojaPostac = new Nekromanta(name);
                break;
            case 3:
                System.out.println("Wybrałeś Szamana");
-//               twojaPostac = new Szaman(name);
+               twojaPostac = new Szaman(name);
                break;
            case 4:
                System.out.println("Wybrałeś Wojownika");
-//               twojaPostac = new Wojownik(name);
+               twojaPostac = new Wojownik(name);
                break;
        }
 
@@ -43,7 +50,7 @@ public class ŚwiatGryInteraktywnej {
 
         Miecz mieczTypowy = new Miecz();
         Zbroja zbrojaTypowa = new Zbroja();
-//        System.out.println("Witaj " + twojaPostac.getUserName() + " wybierz co chcesz zrobić.");
+        System.out.println("Witaj " + twojaPostac.getUserName() + " wybierz co chcesz zrobić.");
         System.out.println();
         System.out.println("        ***MENU***        ");
         System.out.println("1.Walcz z Goblinem");
@@ -66,54 +73,52 @@ public class ŚwiatGryInteraktywnej {
 
             switch (zmienna) {
                 case 1:
-//                    Goblin goblinWGrze = new Goblin();
-//                    ArenaWalki walkaZGoblinem = new ArenaWalki();
-//                    walkaZGoblinem.walkaPostaci(twojaPostac, goblinWGrze);
+                    Goblin goblinWGrze = new Goblin();
+                    ArenaWalki walkaZGoblinem = new ArenaWalki();
+                    walkaZGoblinem.walkaPostaci(twojaPostac, goblinWGrze);
                     break;
                 case 2:
-//                    Smok smokWGrze = new Smok();
-//                    ArenaWalki walkaZeSmokiem = new ArenaWalki();
-//                    walkaZeSmokiem.walkaPostaci(twojaPostac, smokWGrze);
+                    Smok smokWGrze = new Smok();
+                    ArenaWalki walkaZeSmokiem = new ArenaWalki();
+                    walkaZeSmokiem.walkaPostaci(twojaPostac, smokWGrze);
                     break;
                 case 3:
-//                    Trol trolWGrze = new Trol();
-//                    ArenaWalki walkaZTerolem = new ArenaWalki();
-//                    walkaZTerolem.walkaPostaci(twojaPostac, trolWGrze);
+                    Trol trolWGrze = new Trol();
+                    ArenaWalki walkaZTerolem = new ArenaWalki();
+                    walkaZTerolem.walkaPostaci(twojaPostac, trolWGrze);
                     break;
                 case 4:
-//                    Golum golumWGrze = new Golum();
-//                    ArenaWalki walkaZGolumem = new ArenaWalki();
-//                    walkaZGolumem.walkaPostaci(twojaPostac, golumWGrze);
+                    Golum golumWGrze = new Golum();
+                    ArenaWalki walkaZGolumem = new ArenaWalki();
+                    walkaZGolumem.walkaPostaci(twojaPostac, golumWGrze);
                     break;
                 case 5:
-//                    Medyk medykDlaCiebie = new Medyk();
-//                    medykDlaCiebie.calkowiteUleczenie(twojaPostac);
+                    Medyk medykDlaCiebie = new Medyk();
+                    medykDlaCiebie.calkowiteUleczenie(twojaPostac);
                     break;
                 case 6:
-//                    twojaPostac.stanZycia();
+                    twojaPostac.stanZycia();
                     break;
                 case 7:
-//                    twojaPostac.stanExp();
+                    twojaPostac.stanExp();
                     break;
                 case 8:
-//                    twojaPostac.getMana();
+                    twojaPostac.getMana();
                     break;
                 case 9:
-//                    twojaPostac.dodajMiecz(mieczTypowy);
+                    twojaPostac.dodajMiecz(mieczTypowy);
                     break;
                 case 10:
-//                    twojaPostac.usunMiecz();
+                    twojaPostac.usunMiecz();
                     break;
                 case 11:
-//                    System.out.println(twojaPostac);
+                    System.out.println(twojaPostac);
                     break;
                 case 12:
-//                    twojaPostac.dodajZbroje(zbrojaTypowa);
+                    twojaPostac.dodajZbroje(zbrojaTypowa);
                     break;
                 case 13:
-//                    twojaPostac.usunZbroje();
-
-
+                    twojaPostac.usunZbroje();
 
             }
             System.out.println("***Co dalej mam zrobic?***");
