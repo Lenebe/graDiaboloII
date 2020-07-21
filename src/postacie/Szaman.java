@@ -27,22 +27,6 @@ public class Szaman implements Postac {
         this.pieniadze = 0;
     }
 
-    public String getUserName() {
-        return userName;
-    }
-
-    public double getExp() {
-        return exp;
-    }
-
-    public void setExp(double exp) {
-        this.exp = exp;
-    }
-
-    public boolean isBohaterZginal() {
-        return bohaterZginal;
-    }
-
     public void przyjmijObrazenia(double wartoscCiosu) {
         if (this.zycie <= 0) {
             this.bohaterZginal = true;
@@ -144,6 +128,22 @@ public class Szaman implements Postac {
 
     public String getNazwaPostaci() {
         return nazwaPostaci;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public double getExp() {
+        return exp;
+    }
+
+    public void setExp(double exp) {
+        this.exp = exp;
+    }
+
+    public boolean isBohaterZginal() {
+        return bohaterZginal;
     }
 
     @Override

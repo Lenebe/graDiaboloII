@@ -32,7 +32,7 @@ public class ArenaWalki {
             twojBohater.dodajExp(potworDoWalki.getExp());
             System.out.println("Za zabicie " + potworDoWalki.getName() + " dostajesz " + potworDoWalki.getExp() + " expa!");
             twojBohater.zbierzKase(potworDoWalki.getPieniadze());
-            System.out.println(twojBohater.getUserName() + " zdobryłeś " + potworDoWalki.getPieniadze() + " złota!.");
+            System.out.println(twojBohater.getUserName() + " zdobyłeś " + potworDoWalki.getPieniadze() + " złota!.");
             potworDoWalki.setPieniadze(0);
 
             return twojBohater;

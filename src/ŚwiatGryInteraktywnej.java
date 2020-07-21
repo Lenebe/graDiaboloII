@@ -7,7 +7,6 @@ import potwory.Goblin;
 import potwory.Golum;
 import potwory.Smok;
 import potwory.Trol;
-
 import java.util.Scanner;
 
 public class ŚwiatGryInteraktywnej {
@@ -45,7 +44,6 @@ public class ŚwiatGryInteraktywnej {
                twojaPostac = new Wojownik(name);
                break;
        }
-
 
         Miecz mieczTypowy = new Miecz();
         Zbroja zbrojaTypowa = new Zbroja();
@@ -123,8 +121,5 @@ public class ŚwiatGryInteraktywnej {
             System.out.println("***Co dalej mam zrobic?***");
             zmienna = sc.nextInt();
         }
-
     }
-
-
 }

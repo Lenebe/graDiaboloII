@@ -19,6 +19,4 @@ public interface Potwor {
     void setPieniadze(int pieniadze);
 
     int getPieniadze();
-
-
 }
