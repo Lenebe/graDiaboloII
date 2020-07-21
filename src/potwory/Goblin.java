@@ -1,6 +1,7 @@
 package potwory;
 
 public class Goblin implements Potwor {
+
     private int sila;
     private double zycie;
     private boolean czyZabity;
@@ -8,22 +9,6 @@ public class Goblin implements Potwor {
     private String name;
     private int zrecznosc;
     private int pieniadze;
-
-    public int getPieniadze() {
-        return pieniadze;
-    }
-
-    public void setPieniadze(int pieniadze) {
-        this.pieniadze = pieniadze;
-    }
-
-    public double getExp() {
-        return exp;
-    }
-
-    public boolean isCzyZabity() {
-        return czyZabity;
-    }
 
     public Goblin() {
         this.sila = 5;
@@ -35,7 +20,6 @@ public class Goblin implements Potwor {
     }
 
     public void przyjmijObrazenia(double obrazenia) {
-
         if (this.zycie <= 0) {
             this.czyZabity = true;
             System.out.println("\nGoblin już zabity");
@@ -51,8 +35,24 @@ public class Goblin implements Potwor {
         return (int) (Math.random() * 10) * this.sila;
     }
 
+    public double getExp() {
+        return exp;
+    }
+
+    public boolean isCzyZabity() {
+        return czyZabity;
+    }
+
     public void stanZycia(){
         System.out.println("Goblin ma: " +this.zycie + " życia.");
+    }
+
+    public void setPieniadze(int pieniadze) {
+        this.pieniadze = pieniadze;
+    }
+
+    public int getPieniadze() {
+        return pieniadze;
     }
 
     public String getName() {

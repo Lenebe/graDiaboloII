@@ -47,7 +47,6 @@ public class ŚwiatGryInteraktywnej {
        }
 
 
-
         Miecz mieczTypowy = new Miecz();
         Zbroja zbrojaTypowa = new Zbroja();
         System.out.println("Witaj " + twojaPostac.getUserName() + " wybierz co chcesz zrobić.");

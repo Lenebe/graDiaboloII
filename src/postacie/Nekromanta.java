@@ -1,10 +1,9 @@
 package postacie;
-
-
 import ekwipunek.Miecz;
 import ekwipunek.Zbroja;
 
 public class Nekromanta implements Postac {
+
     private String nazwaPostaci;
     private String userName;
     private double zycie;
@@ -17,52 +16,8 @@ public class Nekromanta implements Postac {
     public Zbroja zbrojaBohatera;
     private int pieniadze;
 
-    public int getPieniadze() {
-        return pieniadze;
-    }
-
-    public void setPieniadze(int pieniadze) {
-        this.pieniadze = pieniadze;
-    }
-
-    public String getNazwaPostaci() {
-        return nazwaPostaci;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public double getExp() {
-        return exp;
-    }
-
-    public void setExp(double exp) {
-        this.exp = exp;
-    }
-
-    public boolean isBohaterZginal() {
-        return bohaterZginal;
-    }
-
-    @Override
-    public String toString() {
-        return "Nekromanta{" +
-                "nazwaPostaci='" + nazwaPostaci + '\'' +
-                ", userName='" + userName + '\'' +
-                ", zycie=" + zycie +
-                ", mana=" + mana +
-                ", bohaterZginal=" + bohaterZginal +
-                ", sila=" + sila +
-                ", zrecznosc=" + zrecznosc +
-                ", exp=" + exp +
-                ", mieczBohatera=" + mieczBohatera +
-                ", zbrojaBohatera=" + zbrojaBohatera +
-                ", pieniadze=" + pieniadze +
-                '}';
-    }
-
     public Nekromanta(String nadajImie){
+
         this.nazwaPostaci = "Nekromanta";
         this.userName = nadajImie;
         this.zycie = 200;
@@ -131,6 +86,13 @@ public class Nekromanta implements Postac {
         System.out.println(this.nazwaPostaci+" " + this.userName + " założył zbroje.");
     }
 
+    public void zbierzKase(int kasaOdTruchla){
+        this.pieniadze += kasaOdTruchla;
+    }
+
+    public void stanMany(){
+        System.out.println(" "+ userName + " ma " + mana + " pkt." );
+    }
     public void usunZbroje(){
         if(this.zbrojaBohatera != null){
             this.zycie += this.zbrojaBohatera.getModyfikatorZycia();
@@ -152,16 +114,54 @@ public class Nekromanta implements Postac {
     public void setMana(double mana) {
         this.mana = mana;
     }
-    public void stanMany(){
-        System.out.println(" "+ userName + " ma " + mana + " pkt." );
-    }
 
     public int getZrecznosc() {
         return zrecznosc;
     }
 
-    public void zbierzKase(int kasaOdTruchla){
-        this.pieniadze += kasaOdTruchla;
+    public int getPieniadze() {
+        return pieniadze;
     }
 
+    public void setPieniadze(int pieniadze) {
+        this.pieniadze = pieniadze;
+    }
+
+    public String getNazwaPostaci() {
+        return nazwaPostaci;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public double getExp() {
+        return exp;
+    }
+
+    public void setExp(double exp) {
+        this.exp = exp;
+    }
+
+    public boolean isBohaterZginal() {
+        return bohaterZginal;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Nekromanta{" +
+                "nazwaPostaci='" + nazwaPostaci + '\'' +
+                ", userName='" + userName + '\'' +
+                ", zycie=" + zycie +
+                ", mana=" + mana +
+                ", bohaterZginal=" + bohaterZginal +
+                ", sila=" + sila +
+                ", zrecznosc=" + zrecznosc +
+                ", exp=" + exp +
+                ", mieczBohatera=" + mieczBohatera +
+                ", zbrojaBohatera=" + zbrojaBohatera +
+                ", pieniadze=" + pieniadze +
+                '}';
+    }
 }

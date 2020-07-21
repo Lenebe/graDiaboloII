@@ -1,6 +1,7 @@
 package ekwipunek;
 
 public class Zbroja {
+
     private double modyfikatorZycia;
     private double modyfinatorZrecznosci;
 

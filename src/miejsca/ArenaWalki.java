@@ -1,12 +1,11 @@
 package miejsca;
-
-
 import postacie.Postac;
 import potwory.Potwor;
 
 public class ArenaWalki {
 
     public Postac walkaPostaci(Postac twojBohater, Potwor potworDoWalki) {
+
         System.out.println("_WALKA_");
         while (!twojBohater.isBohaterZginal() && !potworDoWalki.isCzyZabity()) {
             if (potworDoWalki.getZrecznosc() > twojBohater.getZrecznosc()) {
@@ -19,8 +18,8 @@ public class ArenaWalki {
                 System.out.println("***ZADANIE CIOSÓW***");
                 System.out.println(twojBohater.getUserName() + " zadaje cios");
                 potworDoWalki.przyjmijObrazenia(twojBohater.zadajCios());
-                if(twojBohater.isBohaterZginal() || potworDoWalki.isCzyZabity())
-                System.out.println(potworDoWalki.getName() + " zadaje cios");
+                if (twojBohater.isBohaterZginal() || potworDoWalki.isCzyZabity())
+                    System.out.println(potworDoWalki.getName() + " zadaje cios");
                 twojBohater.przyjmijObrazenia(potworDoWalki.zadajCios());
             }
         }

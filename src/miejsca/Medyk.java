@@ -1,9 +1,8 @@
 package miejsca;
-
-
 import postacie.Postac;
 
 public class Medyk {
+
     private double mana;
 
     public void calkowiteUleczenie(Postac przybylyBohater) {

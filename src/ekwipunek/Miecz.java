@@ -6,10 +6,6 @@ public class Miecz {
     private double modyfikatorZrecznosci;
     private int cenaMiecza;
 
-    public int getCenaMiecza() {
-        return cenaMiecza;
-    }
-
     public Miecz() {
         this.modyfikatorSily = 10;
         this.modyfikatorZrecznosci = 2;
@@ -22,6 +18,10 @@ public class Miecz {
 
     public double getModyfikatorZrecznosci() {
         return modyfikatorZrecznosci;
+    }
+
+    public int getCenaMiecza() {
+        return cenaMiecza;
     }
 
 }
