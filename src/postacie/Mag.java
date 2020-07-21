@@ -130,7 +130,6 @@ public class Mag implements Postac {
         return bohaterZginal;
     }
 
-
     public void setZycie(double zycie) {
         this.zycie = zycie;
     }

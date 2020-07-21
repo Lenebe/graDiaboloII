@@ -147,7 +147,6 @@ public class Nekromanta implements Postac {
         return bohaterZginal;
     }
 
-
     @Override
     public String toString() {
         return "Nekromanta{" +

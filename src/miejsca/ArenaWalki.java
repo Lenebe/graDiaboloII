@@ -37,6 +37,5 @@ public class ArenaWalki {
 
             return twojBohater;
         }
-
     }
 }

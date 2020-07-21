@@ -23,5 +23,4 @@ public class Miecz {
     public int getCenaMiecza() {
         return cenaMiecza;
     }
-
 }

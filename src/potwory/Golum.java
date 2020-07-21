@@ -17,7 +17,6 @@ public class Golum implements Potwor {
         this.name = "Golum";
         this.zrecznosc = 40;
         this.pieniadze = 40;
-
     }
 
     public void przyjmijObrazenia(double obrazenia) {

@@ -20,7 +20,6 @@ public class Sklep {
             System.out.println(wojownikWSklepie.getUserName() + " własnie kupiłeś miecz!");
         }
         System.out.println(wojownikWSklepie.getUserName() + "! nie stać Cie na miecz! Wróc gdy bedziesz miał " + mieczDoSprzedania.getCenaMiecza() + " złota.");
-
     }
 
     public void sprzedajZbroje(Wojownik wojownikWSklepie) {
@@ -30,6 +29,5 @@ public class Sklep {
             System.out.println(wojownikWSklepie.getUserName() + " własnie kupiłeś miecz!");
         }
         System.out.println(wojownikWSklepie.getUserName() + "! nie stać Cie na miecz! Wróc gdy bedziesz miał " + mieczDoSprzedania.getCenaMiecza() + " złota.");
-
     }
 }

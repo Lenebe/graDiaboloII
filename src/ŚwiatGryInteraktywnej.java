@@ -26,6 +26,7 @@ public class ŚwiatGryInteraktywnej {
         System.out.println("1.Mag\n2.Nekromanta\n3.Szaman\n4.Wojownik");
         System.out.println("Podaj numer postaci:");
         int pom = pomSkaner.nextInt();
+
        switch(pom){
            case 1:
                System.out.println("Wybrałeś Maga");
@@ -116,7 +117,6 @@ public class ŚwiatGryInteraktywnej {
                     break;
                 case 13:
                     twojaPostac.usunZbroje();
-
             }
             System.out.println("***Co dalej mam zrobic?***");
             zmienna = sc.nextInt();

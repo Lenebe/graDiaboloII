@@ -11,7 +11,6 @@ public class Medyk {
             System.out.println("- Medyk uzdrowił " + przybylyBohater.getUserName() + " koszty many -20-");
             przybylyBohater.setMana(przybylyBohater.getMana() - 20);
             this.mana += 20;
-
         } else {
             System.out.println(przybylyBohater.getUserName() + "! Nie masz wystarczajacej ilosci many.");
         }
